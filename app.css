@@ -19,6 +19,11 @@ a {
     flex-wrap: wrap;
 }
 
+[class*="container-bar"] {
+    height: 100px;
+    padding: 0 50px;
+}
+
 /* HEADER */
 
 .container-side {
@@ -42,13 +47,11 @@ h1 {
 
 /* FOOTER */
 
-.container-foot {
+.container-bar-foot {
     background-color: darkslategray;
-    width: 100%;
-    height: 100px;
-    padding: 0 50px;
     position: fixed;
     bottom: 0;
+    width: 100%;
 }
 
 .row.foot {
@@ -63,4 +66,55 @@ h1 {
     flex-direction: row;
     justify-content: space-between;
     width: 300px;
+}
+
+/* MAIN bar */
+
+.container-main {
+    position: relative;
+    height: calc(100vh - 200px);
+}
+
+.container-bar-main {
+    background-color: rgb(172, 82, 113);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: calc(100% - 300px);
+}
+
+.container-bar-main a {
+    border-radius: 999px;
+    padding: 20px;
+    background-color: white;
+    border: none;
+    color: black;
+}
+
+.row.main-bar {
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+/* MAIN content */
+
+.container-section {
+    background-color: rgb(189, 123, 146);
+    height: 100%;
+    width: calc(100% - 300px);
+    position: absolute;
+    right: 0;
+    top: 100px;
+    padding: 30px;
+}
+
+h2 {
+    padding: 30px 0;
+}
+
+.box-sezione {
+    border-left: 2px solid white;
+    padding: 0 15px;
+    margin: 0 150px 30px 0;
 }
