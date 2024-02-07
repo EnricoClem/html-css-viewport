@@ -71,8 +71,9 @@ h1 {
 /* MAIN bar */
 
 .container-main {
-    position: relative;
-    height: calc(100vh - 200px);
+    position: absolute;
+    right: 0;
+    width: calc(100% - 300px);
 }
 
 .container-bar-main {
@@ -80,7 +81,7 @@ h1 {
     position: absolute;
     top: 0;
     right: 0;
-    width: calc(100% - 300px);
+    width: 100%;
 }
 
 .container-bar-main a {
@@ -101,12 +102,12 @@ h1 {
 
 .container-section {
     background-color: rgb(189, 123, 146);
-    height: 100%;
-    width: calc(100% - 300px);
+    height: fit-content;
+    width: 100%;
     position: absolute;
     right: 0;
     top: 100px;
-    padding: 30px;
+    padding: 30px 30px 130px 30px;
 }
 
 h2 {
