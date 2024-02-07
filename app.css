@@ -3,9 +3,37 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    color: white;
 }
 
 ol, ul, menu {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* HEADER */
+
+.container-side {
+    background-color: rgb(27, 174, 101);
+    width: 300px;
+    height: 100vh;
+    padding: 50px;
+}
+
+.row.side {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
