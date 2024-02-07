@@ -22,10 +22,12 @@ a {
 /* HEADER */
 
 .container-side {
-    background-color: rgb(27, 174, 101);
+    background-color: rgb(27, 174, 140);
     width: 300px;
-    height: 100vh;
+    height: calc(100% - 100px);
     padding: 50px;
+    position: fixed;
+    left: 0;
 }
 
 .row.side {
@@ -36,4 +38,29 @@ a {
 
 h1 {
     margin-bottom: 30px;
+}
+
+/* FOOTER */
+
+.container-foot {
+    background-color: darkslategray;
+    width: 100%;
+    height: 100px;
+    padding: 0 50px;
+    position: fixed;
+    bottom: 0;
+}
+
+.row.foot {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.list-foot {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 300px;
 }
